@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b0d12" />
+  <title>财务工作台</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="财务工作台" />
+  <meta name="theme-color" content="#0b0d12" />
+  <link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIui0ouWKoeW3peS9nOWPsCIsICJzaG9ydF9uYW1lIjogIui0ouWKoSIsICJkZXNjcmlwdGlvbiI6ICLnnIvmuIXmr4/kuIDnrJTpkrHljrvlk6rkuobvvIzmrKDlpJrlsJHlgLrvvIzlrZjkuoblpJrlsJHnsq7vvIzlia/kuJror5XlvpfmgI7kuYjmoLfvvIzlhrLliqjmtojotLnml7bmi4nkvaDkuIDmiorjgIIiLCAic3RhcnRfdXJsIjogIi8iLCAic2NvcGUiOiAiLyIsICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLCAib3JpZW50YXRpb24iOiAicG9ydHJhaXQiLCAiYmFja2dyb3VuZF9jb2xvciI6ICIjMGIwZDEyIiwgInRoZW1lX2NvbG9yIjogIiMwYjBkMTIiLCAiaWNvbnMiOiBbeyJzcmMiOiAiZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFRQUFBQUVBQ0FJQUFBRFRFRDh4QUFBRHFFbEVRVlI0MnUzZE1VN0RRQlJGMGQ4akdoYktOaW1vV1FBVkswQklWQ0JSUW9HQ0hleTVSN29iaVBXT1Vrd3lucHZiT3luYmVBUUNRQUpBQWtBQ1FBSkFBa0FDUUFKQUFrQUNRQUpBQWtBQ1FBSkFBa0FDUUFKQUFrQUNRQUpBQWtBQ1FBSkFBa0FDUUFKQUFrQUNRQUpBQWtBQ1FBSkFBa0FDUUFKQUFrQUNRQUpBQWtBQ1FBSkFBa0FDUUFKQUFrQUNRQUxnVzY5djcvb0tBRU5YRWNiWXZjb1N4dTVWbGpDbXJ6S0RNWDJWR1l6MXEyeGdURjlsQm1QOUtoc1k2MWZad0ZpL3lnYkcrbFUyTU5hdnNvR3hmcFVOalBXcmJHQ3NYMlVEQUFnQTYxZlZ3RmkveWdZQUVBRFdyNm9CQUFTQTlhdHFBQUFCQUlBQXNQNS82ZjdsZ1FFQUtnQSs1LzZiQUFBZ092MjFHUUJRWFA4RjAxK1lBUUF0QUg5Yy8zb0dBQWdCMkdUOWl4a0FvQUpndy9XdlpBQ0FCSUROMTcrTUFRRFdCN0RUK3Rjd0FNRGlBSFpkL3dJR0FBQUFBQUNzbndFQUFBQUFnSFVBWEczOVp6Y0FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBSEJlQUZkZS82a05BT0Fid0RjQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFJQmZnL28xS0FBQUFBQUFBLzRXREFBQUFBREFnSnRSQUdEQTNWZ0F1QmtPQUFEY0RRb0FBRzZIQmdBQTd3Y0FBSUJGR2F6NktBRG92aDR2UG4wQXZCL3lCeEsxand3QUFPa0FBQUFBQUFBQUFBQUFBQUFBQUFBQTJCckE0OU96dGcwQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBSEFPSUFBQUVBQUFDQUFBQkFBQUFnQUFBUUNBQUFCQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUNBZlFBQWdBQUFRQUFBSUFBQUVBQUFDQUFBQkFBQUFnQUFBUUNBZTRIY0N3UUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFJQUNjQThnNUFBQUNBQUFCQUlBQUFFQUFBQ0FBQUJBQUFBZ0FBQVFBQUFJQUFBRUFnQUFBUUFBQUlBQUFFQUFBQ0FBQUJBQUFBZ0FBQWNDQXpyeCtBQVFBQUFJQUFBR3dGQURYK0J6elhpQUFBQUFBQUFBQUFBQUFBQURZeTRDOUhoREFBWmNHZ0FBQVFBQTREVkRxQkFBQUFRQ0FBR0JBemZVRElBQU9ESUFCNndmQWdBQUlBMkRBK3VzQUdMQitBSXdKZ0RBQUJxeS9Eb0FCNjY4RFlNRDY2d0FZc1A0NkFBYXN2dzZBQWV1dkEyREErdXNBR0xEK09nQU1UQjhBQnF3L0R3QUQwd2NBQTlNSGdBUzdCNEFFdXdjQURFTUhRQUpBQWtBQ1FBSkFBa0FDUUFCNEJBSkFBa0FDUUFKQUFrQUNRQUpBQWtBQ1FBSkFBa0FDUUFKQUFrQUNRQUpBQWtBQ1FBSkFBa0FDUUFKQUFrQUNRQUpBQWtBQ1FBSkFBa0FDUUFKQUFrQUNRQUpBQWtBQ1FBSkFBa0FDUUxxNEQwejZLeEQxZ2NtL0FBQUFBRWxGVGtTdVFtQ0MiLCAic2l6ZXMiOiAiMjU2eDI1NiIsICJ0eXBlIjogImltYWdlL3BuZyIsICJwdXJwb3NlIjogImFueSJ9LCB7InNyYyI6ICJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQVFBQUFBRUFDQUlBQUFEVEVEOHhBQUFEcUVsRVFWUjQydTNkTVU3RFFCUkYwZDhqR2hiS05pbW9XUUFWSzBCSVZDQlJRb0dDSGV5NVI3b2JpUFdPVWt3eW5wdmJPeW5iZUFRQ1FBSkFBa0FDUUFKQUFrQUNRQUpBQWtBQ1FBSkFBa0FDUUFKQUFrQUNRQUpBQWtBQ1FBSkFBa0FDUUFKQUFrQUNRQUpBQWtBQ1FBSkFBa0FDUUFKQUFrQUNRQUpBQWtBQ1FBSkFBa0FDUUFKQUFrQUNRQUpBQWtBQ1FBTGdXNjl2Ny9vS0FFTlhFY2JZdmNvU3h1NVZsakNtcnpLRE1YMlZHWXoxcTJ4Z1RGOWxCbVA5S2hzWTYxZlp3RmkveWdiRytsVTJNTmF2c29HeGZwVU5qUFdyYkdDc1gyVURBQWdBNjFmVndGaS95Z1lBRUFEV3I2b0JBQVNBOWF0cUFBQUJBSUFBc1A1LzZmN2xnUUVBS2dBKzUvNmJBQUFnT3YyMUdRQlFYUDhGMDErWUFRQXRBSDljLzNvR0FBZ0IyR1Q5aXhrQW9BSmd3L1d2WkFDQUJJRE4xNytNQVFEV0I3RFQrdGN3QU1EaUFIWmQvd0lHQUFBQUFBQ3Nud0VBQUFBQWdIVUFYRzM5WnpjQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFIQmVBRmRlLzZrTkFPQWJ3RGNBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUlCZmcvbzFLQUFBQUFBQUEvNFdEQUFBQUFEQWdKdFJBR0RBM1ZnQXVCa09BQURjRFFvQUFHNkhCZ0FBN3djQUFJQkZHYXo2S0FEb3ZoNHZQbjBBdkIveUJ4SzFqd3dBQU9rQUFBQUFBQUFBQUFBQUFBQUFBQUFBMkJyQTQ5T3p0ZzBBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFIQU9JQUFBRUFBQUNBQUFCQUFBQWdBQUFRQ0FBQUJBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQ0FmUUFBZ0FBQVFBQUFJQUFBRUFBQUNBQUFCQUFBQWdBQUFRQ0FlNEhjQ3dRQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUlBQ2NBOGc1QUFBQ0FBQUJBSUFBQUVBQUFDQUFBQkFBQUFnQUFBUUFBQUlBQUFFQWdBQUFRQUFBSUFBQUVBQUFDQUFBQkFBQUFnQUFBY0NBenJ4K0FBUUFBQUlBQUFHd0ZBRFgrQnp6WGlBQUFBQUFBQUFBQUFBQUFBRFl5NEM5SGhEQUFaY0dnQUFBUUFBNERWRHFCQUFBQVFDQUFHQkF6ZlVESUFBT0RJQUI2d2ZBZ0FBSUEyREErdXNBR0xCK0FJd0pnREFBQnF5L0RvQUI2NjhEWU1ENjZ3QVlzUDQ2QUFhc3Z3NkFBZXV2QTJEQSt1c0FHTEQrT2dBTVRCOEFCcXcvRHdBRDB3Y0FBOU1IZ0FTN0I0QUV1d2NBREVNSFFBSkFBa0FDUUFKQUFrQUNRQUI0QkFKQUFrQUNRQUpBQWtBQ1FBSkFBa0FDUUFKQUFrQUNRQUpBQWtBQ1FBSkFBa0FDUUFKQUFrQUNRQUpBQWtBQ1FBSkFBa0FDUUFKQUFrQUNRQUpBQWtBQ1FBSkFBa0FDUUFKQUFrQUNRTHE0RDB6Nkt4RDFnY20vQUFBQUFFbEZUa1N1UW1DQyIsICJzaXplcyI6ICIyNTZ4MjU2IiwgInR5cGUiOiAiaW1hZ2UvcG5nIiwgInB1cnBvc2UiOiAibWFza2FibGUifV19" />
+  <link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAIAAADTED8xAAADqElEQVR42u3dMU7DQBRF0d8jGhbKNimoWQAVK0BIVCBRQoGCHey5R7obiPWOUkwynpvbOynbeAQCQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQALgW69v7/oKAENXEcbYvcoSxu5VljCmrzKDMX2VGYz1q2xgTF9lBmP9KhsY61fZwFi/ygbG+lU2MNavsoGxfpUNjPWrbGCsX2UDAAgA61fVwFi/ygYAEADWr6oBAASA9atqAAABAIAAsP5/6f7lgQEAKgA+5/6bAAAgOv21GQBQXP8F01+YAQAtAH9c/3oGAAgB2GT9ixkAoAJgw/WvZACABIDN17+MAQDWB7DT+tcwAMDiAHZd/wIGAAAAAACsnwEAAAAAgHUAXG39ZzcAAAAAAAAAAAAAAAAAAAAAAAAAAHBeAFde/6kNAOAbwDcAAAAAAAAAAAAAAAAAAAAAAAAAAIBfg/o1KAAAAAAAA/4WDAAAAADAgJtRAGDA3VgAuBkOAADcDQoAAG6HBgAA7wcAAIBFGaz6KADovh4vPn0AvB/yBxK1jwwAAOkAAAAAAAAAAAAAAAAAAAAA2BrA49Oztg0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHAOIAAAEAAACAAABAAAAgAAAQCAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAfQAAgAAAQAAAIAAAEAAACAAABAAAAgAAAQCAe4HcCwQAAAAAAAAAAAAAAAAAAAAAAAAAIACcA8g5AAACAAABAIAAAEAAACAAABAAAAgAAAQAAAIAAAEAgAAAQAAAIAAAEAAACAAABAAAAgAAAcCAzrx+AAQAAAIAAAGwFADX+BzzXiAAAAAAAAAAAAAAAADYy4C9HhDAAZcGgAAAQAA4DVDqBAAAAQCAAGBAzfUDIAAODIAB6wfAgAAIA2DA+usAGLB+AIwJgDAABqy/DoAB668DYMD66wAYsP46AAasvw6AAeuvA2DA+usAGLD+OgAMTB8ABqw/DwAD0wcAA9MHgAS7B4AEuwcADEMHQAJAAkACQAJAAkACQAB4BAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQLq4D0z6KxD1gcm/AAAAAElFTkSuQmCC" />
+  <style>
+:root{
+  --bg:#0b0d12;
+  --panel:#14171e;
+  --panel2:#1b1f28;
+  --line:rgba(255,255,255,.07);
+  --txt:#eef1f6;
+  --muted:#9aa3b2;
+  --accent:#6ee7c7;
+  --accent-ink:#04201a;
+  --accent-soft:rgba(110,231,199,.14);
+  --red:#ff7a7a;
+  --amber:#ffc46b;
+  --green:#6ee7c7;
+  --blue:#7aa2ff;
+  --violet:#a78bfa;
+  --gray:#9aa3b2;
+  --tap:50px;
+  --radius:20px;
+  --radius-sm:14px;
+  --shadow:0 12px 30px -16px rgba(0,0,0,.85), inset 0 1px 0 rgba(255,255,255,.04);
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0;color:var(--txt);
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Segoe UI",Roboto,sans-serif;
+  font-size:16px;line-height:1.55;
+  background:
+    radial-gradient(130% 90% at 50% -15%, #161a22 0%, #0b0d12 55%) fixed,
+    var(--bg);
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+}
+.tnum,.big,.stat .v,.item .amt,.amount-input{font-variant-numeric:tabular-nums;font-feature-settings:"tnum"}
+button{font-family:inherit;cursor:pointer}
+::selection{background:var(--accent-soft);color:var(--txt)}
+
+/* 顶部栏 */
+.topbar{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:12px;
+  padding:12px 16px;
+  background:rgba(11,13,18,.72);backdrop-filter:blur(18px) saturate(140%);
+  -webkit-backdrop-filter:blur(18px) saturate(140%);
+  border-bottom:1px solid var(--line)}
+.topbar h1{font-size:18px;margin:0;font-weight:600;letter-spacing:.01em}
+.icon-btn{width:var(--tap);height:var(--tap);border-radius:var(--radius-sm);border:1px solid var(--line);
+  background:var(--panel);color:var(--txt);font-size:20px;line-height:1;
+  display:flex;align-items:center;justify-content:center;transition:.15s}
+.icon-btn:active{transform:scale(.94);background:var(--panel2)}
+.topbar-spacer{flex:1}
+
+/* 抽屉 */
+.scrim{position:fixed;inset:0;background:rgba(4,6,10,.55);opacity:0;visibility:hidden;
+  backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px);transition:.25s;z-index:40}
+.scrim.show{opacity:1;visibility:visible}
+.drawer{position:fixed;top:0;left:0;height:100%;width:272px;max-width:84vw;
+  background:rgba(20,23,30,.82);backdrop-filter:blur(24px) saturate(150%);
+  -webkit-backdrop-filter:blur(24px) saturate(150%);
+  border-right:1px solid var(--line);transform:translateX(-106%);
+  transition:.26s cubic-bezier(.22,.61,.36,1);z-index:50;display:flex;flex-direction:column}
+.drawer.show{transform:translateX(0)}
+.drawer-head{padding:26px 20px 18px;font-weight:700;font-size:18px;letter-spacing:.02em;
+  border-bottom:1px solid var(--line);
+  background:linear-gradient(180deg,rgba(110,231,199,.08),transparent)}
+.menu{list-style:none;margin:0;padding:10px;flex:1;overflow:auto}
+.menu li{position:relative;display:flex;align-items:center;gap:12px;padding:15px 14px;border-radius:var(--radius-sm);
+  font-size:15.5px;color:var(--muted);margin-bottom:5px;transition:.15s}
+.menu li .dot{width:26px;height:26px;border-radius:9px;display:flex;align-items:center;justify-content:center;
+  background:var(--panel2);font-size:15px;transition:.15s}
+.menu li:active{background:var(--panel2)}
+.menu li.active{color:#fff;background:var(--accent-soft)}
+.menu li.active::before{content:"";position:absolute;left:0;top:50%;transform:translateY(-50%);
+  width:3px;height:22px;border-radius:3px;background:var(--accent)}
+.menu li.active .dot{background:rgba(110,231,199,.18);filter:drop-shadow(0 0 8px rgba(110,231,199,.5))}
+.drawer-foot{padding:14px 20px;font-size:11.5px;color:var(--muted);border-top:1px solid var(--line);opacity:.7}
+
+/* 内容 */
+.content{max-width:480px;margin:0 auto;padding:18px 16px 48px}
+.card{background:linear-gradient(180deg,var(--panel),#12151b);border:1px solid var(--line);
+  border-radius:var(--radius);padding:18px;margin-bottom:16px;box-shadow:var(--shadow);
+  animation:cardIn .32s ease both}
+@keyframes cardIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.card h2{font-size:14px;margin:0 0 14px;font-weight:600;letter-spacing:.06em;color:var(--muted);
+  display:flex;align-items:center;gap:9px;padding-left:12px;position:relative}
+.card h2::before{content:"";position:absolute;left:0;top:50%;transform:translateY(-50%);
+  width:3px;height:15px;border-radius:3px;background:var(--accent);box-shadow:0 0 8px rgba(110,231,199,.5)}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.muted{color:var(--muted);font-size:13px}
+.big{font-size:34px;font-weight:700;letter-spacing:-.02em}
+.center{text-align:center}
+
+/* 大按钮 */
+.btn{height:var(--tap);min-width:var(--tap);padding:0 20px;border-radius:var(--radius-sm);
+  border:1px solid var(--line);background:var(--panel2);color:var(--txt);font-size:15.5px;font-weight:600;
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:.15s}
+.btn:active{transform:scale(.97)}
+.btn.primary{background:linear-gradient(135deg,#7eeed6,#4fd1b5);border-color:transparent;color:var(--accent-ink);
+  box-shadow:0 8px 20px -10px rgba(110,231,199,.6)}
+.btn.green{background:linear-gradient(135deg,#7eeed6,#4fd1b5);border-color:transparent;color:var(--accent-ink)}
+.btn.amber{background:linear-gradient(135deg,#ffd28a,#ffb454);border-color:transparent;color:#3a2600}
+.btn.ghost{background:transparent}
+.btn.block{width:100%}
+.btn.sm{height:40px;min-width:40px;padding:0 14px;font-size:14px}
+
+/* 选项标签 */
+.chips{display:flex;flex-wrap:wrap;gap:9px}
+.chip{padding:13px 14px;border-radius:var(--radius-sm);border:1px solid var(--line);
+  background:var(--panel2);color:var(--muted);font-size:14.5px;font-weight:600;flex:1;text-align:center;min-width:84px;transition:.15s}
+.chip:active{transform:scale(.97)}
+.chip.on{color:#fff;border-color:transparent}
+.chip.on.c-need{background:linear-gradient(135deg,#8fb3ff,#5b8cff);color:#06122e}
+.chip.on.c-want{background:linear-gradient(135deg,#ffd28a,#ffb454);color:#3a2600}
+.chip.on.c-acc{background:linear-gradient(135deg,#ff9a9a,#ff6b6b);color:#3a0000}
+.chip.on.c-mood{background:linear-gradient(135deg,#bda4ff,#8b6cff);color:#1a0f3a}
+.chip.on.c-body{background:linear-gradient(135deg,#7eeed6,#4fd1b5);color:#04201a}
+
+/* 输入 */
+input,select,textarea{width:100%;height:var(--tap);border-radius:var(--radius-sm);border:1px solid var(--line);
+  background:var(--panel2);color:var(--txt);font-size:16px;padding:0 14px;font-family:inherit;
+  transition:.15s;outline:none}
+input:focus,select:focus,textarea:focus{border-color:var(--accent);
+  box-shadow:0 0 0 3px var(--accent-soft);background:var(--panel)}
+textarea{height:auto;padding:12px 14px;min-height:84px;line-height:1.5}
+label.field{display:block;margin-bottom:14px}
+label.field>span{display:block;font-size:12.5px;color:var(--muted);margin-bottom:7px;letter-spacing:.02em}
+.amount-input{font-size:36px;font-weight:700;text-align:center;height:66px;letter-spacing:-.02em}
+
+/* 列表项 */
+.item{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);padding:14px 16px;
+  margin-bottom:11px;display:flex;flex-direction:column;gap:8px;transition:.15s}
+.item:active{background:var(--panel2)}
+.item .top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.item .amt{font-size:18px;font-weight:700}
+.item .tags{display:flex;gap:7px;flex-wrap:wrap}
+.tag{font-size:11.5px;padding:4px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted);background:var(--panel2)}
+.tag.need{color:#a9c2ff;border-color:rgba(122,162,255,.4);background:rgba(122,162,255,.1)}
+.tag.want{color:#ffd28a;border-color:rgba(255,180,84,.4);background:rgba(255,180,84,.1)}
+.tag.acc{color:#ff9a9a;border-color:rgba(255,107,107,.4);background:rgba(255,107,107,.1)}
+.tag.mood{color:#bda4ff;border-color:rgba(167,139,250,.4);background:rgba(167,139,250,.1)}
+.tag.body{color:#7eeed6;border-color:rgba(110,231,199,.4);background:rgba(110,231,199,.1)}
+.del{color:var(--red);background:transparent;border:none;font-size:13px;padding:4px 8px}
+
+/* 进度条 */
+.bar{height:11px;border-radius:999px;background:var(--panel2);overflow:hidden;border:1px solid var(--line)}
+.bar>i{display:block;height:100%;background:linear-gradient(90deg,#6ee7c7,#7aa2ff);border-radius:999px;
+  box-shadow:0 0 12px -2px rgba(110,231,199,.6);transition:width .5s ease}
+
+/* 统计块 */
+.stat{display:flex;flex-direction:column;gap:3px}
+.stat .v{font-size:26px;font-weight:700;letter-spacing:-.01em}
+.stat .k{font-size:11.5px;color:var(--muted);letter-spacing:.02em}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:5px 11px;border-radius:999px;
+  background:var(--panel2);border:1px solid var(--line);font-size:12.5px;color:var(--muted)}
+.pill.warn{color:#ffd28a;border-color:rgba(255,180,84,.45);background:rgba(255,180,84,.08)}
+.pill.bad{color:#ff9a9a;border-color:rgba(255,107,107,.45);background:rgba(255,107,107,.08)}
+.pill.good{color:#7eeed6;border-color:rgba(110,231,199,.45);background:rgba(110,231,199,.08)}
+.empty{text-align:center;color:var(--muted);padding:34px 10px;font-size:14px;opacity:.8}
+.toast{position:fixed;left:50%;bottom:32px;transform:translateX(-50%) translateY(20px);
+  background:rgba(20,23,30,.95);color:#fff;padding:13px 20px;border-radius:14px;font-size:14px;opacity:0;
+  transition:.25s;z-index:99;pointer-events:none;max-width:90vw;border:1px solid var(--line);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 12px 30px -12px rgba(0,0,0,.8)}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.seg{display:flex;background:var(--panel2);border:1px solid var(--line);border-radius:var(--radius-sm);overflow:hidden}
+.seg button{flex:1;height:var(--tap);border:none;background:transparent;color:var(--muted);font-size:14.5px;font-weight:600;transition:.15s}
+.seg button.on{background:var(--accent);color:var(--accent-ink)}
+
+/* 副业试错 · 页内三块 tab */
+.tabs{display:flex;gap:6px;margin:0 0 14px}
+.tab{flex:1;height:44px;border:1px solid var(--line);background:var(--panel2);color:var(--muted);
+  font-size:14px;font-weight:600;border-radius:var(--radius-sm);transition:.15s}
+.tab:active{transform:scale(.98)}
+.tab.on{background:var(--accent);color:var(--accent-ink);border-color:transparent;
+  box-shadow:0 8px 20px -10px rgba(110,231,199,.6)}
+/* 想法项目 · AI 方案步骤 */
+.plan-step{background:var(--panel2);border:1px solid var(--line);border-radius:14px;
+  padding:12px 14px;margin-top:10px;display:flex;flex-direction:column;gap:6px}
+
+
+/* ===== PWA / iPhone 16 Pro 适配（不改动原有滚动布局，仅补安全区与全屏） ===== */
+* { -webkit-tap-highlight-color: transparent; -webkit-touch-callout: none; }
+html, body { overscroll-behavior-y: none; background: #0b0d12; }
+body { -webkit-text-size-adjust: 100%; }
+/* 灵动岛 / 状态栏安全区：顶栏下移避开，抽屉顶部留白 */
+.topbar { padding-top: calc(env(safe-area-inset-top, 0px) + 14px) !important; }
+.drawer { padding-top: env(safe-area-inset-top, 0px) !important; }
+/* Home Indicator 安全区：底部内容不被遮挡 */
+.content { padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 48px) !important; }
+/* iPhone 16 Pro (393x852 @3x, Dynamic Island) 字号微调 */
+@media (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) {
+  .topbar h1 { font-size: 19px; }
+  .icon-btn { font-size: 22px; }
+}
+
+  </style>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="财务工作台" />
+  <meta name="theme-color" content="#0b0d12" />
+  <link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIui0ouWKoeW3peS9nOWPsCIsICJzaG9ydF9uYW1lIjogIui0ouWKoSIsICJkZXNjcmlwdGlvbiI6ICLnnIvmuIXmr4/kuIDnrJTpkrHljrvlk6rkuobvvIzmrKDlpJrlsJHlgLrvvIzlrZjkuoblpJrlsJHnsq7vvIzlia/kuJror5XlvpfmgI7kuYjmoLfvvIzlhrLliqjmtojotLnml7bmi4nkvaDkuIDmiorjgIIiLCAic3RhcnRfdXJsIjogIi8iLCAic2NvcGUiOiAiLyIsICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLCAib3JpZW50YXRpb24iOiAicG9ydHJhaXQiLCAiYmFja2dyb3VuZF9jb2xvciI6ICIjMGIwZDEyIiwgInRoZW1lX2NvbG9yIjogIiMwYjBkMTIiLCAiaWNvbnMiOiBbeyJzcmMiOiAiZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFRQUFBQUVBQ0FJQUFBRFRFRDh4QUFBRHFFbEVRVlI0MnUzZE1VN0RRQlJGMGQ4akdoYktOaW1vV1FBVkswQklWQ0JSUW9HQ0hleTVSN29iaVBXT1Vrd3lucHZiT3luYmVBUUNRQUpBQWtBQ1FBSkFBa0FDUUFKQUFrQUNRQUpBQWtBQ1FBSkFBa0FDUUFKQUFrQUNRQUpBQWtBQ1FBSkFBa0FDUUFKQUFrQUNRQUpBQWtBQ1FBSkFBa0FDUUFKQUFrQUNRQUpBQWtBQ1FBSkFBa0FDUUFKQUFrQUNRQUxnVzY5djcvb0tBRU5YRWNiWXZjb1N4dTVWbGpDbXJ6S0RNWDJWR1l6MXEyeGdURjlsQm1QOUtoc1k2MWZad0ZpL3lnYkcrbFUyTU5hdnNvR3hmcFVOalBXcmJHQ3NYMlVEQUFnQTYxZlZ3RmkveWdZQUVBRFdyNm9CQUFTQTlhdHFBQUFCQUlBQXNQNS82ZjdsZ1FFQUtnQSs1LzZiQUFBZ092MjFHUUJRWFA4RjAxK1lBUUF0QUg5Yy8zb0dBQWdCMkdUOWl4a0FvQUpndy9XdlpBQ0FCSUROMTcrTUFRRFdCN0RUK3Rjd0FNRGlBSFpkL3dJR0FBQUFBQUNzbndFQUFBQUFnSFVBWEczOVp6Y0FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBSEJlQUZkZS82a05BT0Fid0RjQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFJQmZnL28xS0FBQUFBQUFBLzRXREFBQUFBREFnSnRSQUdEQTNWZ0F1QmtPQUFEY0RRb0FBRzZIQmdBQTd3Y0FBSUJGR2F6NktBRG92aDR2UG4wQXZCL3lCeEsxand3QUFPa0FBQUFBQUFBQUFBQUFBQUFBQUFBQTJCckE0OU96dGcwQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBSEFPSUFBQUVBQUFDQUFBQkFBQUFnQUFBUUNBQUFCQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUNBZlFBQWdBQUFRQUFBSUFBQUVBQUFDQUFBQkFBQUFnQUFBUUNBZTRIY0N3UUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFJQUNjQThnNUFBQUNBQUFCQUlBQUFFQUFBQ0FBQUJBQUFBZ0FBQVFBQUFJQUFBRUFnQUFBUUFBQUlBQUFFQUFBQ0FBQUJBQUFBZ0FBQWNDQXpyeCtBQVFBQUFJQUFBR3dGQURYK0J6elhpQUFBQUFBQUFBQUFBQUFBQURZeTRDOUhoREFBWmNHZ0FBQVFBQTREVkRxQkFBQUFRQ0FBR0JBemZVRElBQU9ESUFCNndmQWdBQUlBMkRBK3VzQUdMQitBSXdKZ0RBQUJxeS9Eb0FCNjY4RFlNRDY2d0FZc1A0NkFBYXN2dzZBQWV1dkEyREErdXNBR0xEK09nQU1UQjhBQnF3L0R3QUQwd2NBQTlNSGdBUzdCNEFFdXdjQURFTUhRQUpBQWtBQ1FBSkFBa0FDUUFCNEJBSkFBa0FDUUFKQUFrQUNRQUpBQWtBQ1FBSkFBa0FDUUFKQUFrQUNRQUpBQWtBQ1FBSkFBa0FDUUFKQUFrQUNRQUpBQWtBQ1FBSkFBa0FDUUFKQUFrQUNRQUpBQWtBQ1FBSkFBa0FDUUxxNEQwejZLeEQxZ2NtL0FBQUFBRWxGVGtTdVFtQ0MiLCAic2l6ZXMiOiAiMjU2eDI1NiIsICJ0eXBlIjogImltYWdlL3BuZyIsICJwdXJwb3NlIjogImFueSJ9LCB7InNyYyI6ICJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQVFBQUFBRUFDQUlBQUFEVEVEOHhBQUFEcUVsRVFWUjQydTNkTVU3RFFCUkYwZDhqR2hiS05pbW9XUUFWSzBCSVZDQlJRb0dDSGV5NVI3b2JpUFdPVWt3eW5wdmJPeW5iZUFRQ1FBSkFBa0FDUUFKQUFrQUNRQUpBQWtBQ1FBSkFBa0FDUUFKQUFrQUNRQUpBQWtBQ1FBSkFBa0FDUUFKQUFrQUNRQUpBQWtBQ1FBSkFBa0FDUUFKQUFrQUNRQUpBQWtBQ1FBSkFBa0FDUUFKQUFrQUNRQUpBQWtBQ1FBTGdXNjl2Ny9vS0FFTlhFY2JZdmNvU3h1NVZsakNtcnpLRE1YMlZHWXoxcTJ4Z1RGOWxCbVA5S2hzWTYxZlp3RmkveWdiRytsVTJNTmF2c29HeGZwVU5qUFdyYkdDc1gyVURBQWdBNjFmVndGaS95Z1lBRUFEV3I2b0JBQVNBOWF0cUFBQUJBSUFBc1A1LzZmN2xnUUVBS2dBKzUvNmJBQUFnT3YyMUdRQlFYUDhGMDErWUFRQXRBSDljLzNvR0FBZ0IyR1Q5aXhrQW9BSmd3L1d2WkFDQUJJRE4xNytNQVFEV0I3RFQrdGN3QU1EaUFIWmQvd0lHQUFBQUFBQ3Nud0VBQUFBQWdIVUFYRzM5WnpjQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFIQmVBRmRlLzZrTkFPQWJ3RGNBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUlCZmcvbzFLQUFBQUFBQUEvNFdEQUFBQUFEQWdKdFJBR0RBM1ZnQXVCa09BQURjRFFvQUFHNkhCZ0FBN3djQUFJQkZHYXo2S0FEb3ZoNHZQbjBBdkIveUJ4SzFqd3dBQU9rQUFBQUFBQUFBQUFBQUFBQUFBQUFBMkJyQTQ5T3p0ZzBBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFIQU9JQUFBRUFBQUNBQUFCQUFBQWdBQUFRQ0FBQUJBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQ0FmUUFBZ0FBQVFBQUFJQUFBRUFBQUNBQUFCQUFBQWdBQUFRQ0FlNEhjQ3dRQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUlBQ2NBOGc1QUFBQ0FBQUJBSUFBQUVBQUFDQUFBQkFBQUFnQUFBUUFBQUlBQUFFQWdBQUFRQUFBSUFBQUVBQUFDQUFBQkFBQUFnQUFBY0NBenJ4K0FBUUFBQUlBQUFHd0ZBRFgrQnp6WGlBQUFBQUFBQUFBQUFBQUFBRFl5NEM5SGhEQUFaY0dnQUFBUUFBNERWRHFCQUFBQVFDQUFHQkF6ZlVESUFBT0RJQUI2d2ZBZ0FBSUEyREErdXNBR0xCK0FJd0pnREFBQnF5L0RvQUI2NjhEWU1ENjZ3QVlzUDQ2QUFhc3Z3NkFBZXV2QTJEQSt1c0FHTEQrT2dBTVRCOEFCcXcvRHdBRDB3Y0FBOU1IZ0FTN0I0QUV1d2NBREVNSFFBSkFBa0FDUUFKQUFrQUNRQUI0QkFKQUFrQUNRQUpBQWtBQ1FBSkFBa0FDUUFKQUFrQUNRQUpBQWtBQ1FBSkFBa0FDUUFKQUFrQUNRQUpBQWtBQ1FBSkFBa0FDUUFKQUFrQUNRQUpBQWtBQ1FBSkFBa0FDUUFKQUFrQUNRTHE0RDB6Nkt4RDFnY20vQUFBQUFFbEZUa1N1UW1DQyIsICJzaXplcyI6ICIyNTZ4MjU2IiwgInR5cGUiOiAiaW1hZ2UvcG5nIiwgInB1cnBvc2UiOiAibWFza2FibGUifV19" />
+  <link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAIAAADTED8xAAADqElEQVR42u3dMU7DQBRF0d8jGhbKNimoWQAVK0BIVCBRQoGCHey5R7obiPWOUkwynpvbOynbeAQCQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQALgW69v7/oKAENXEcbYvcoSxu5VljCmrzKDMX2VGYz1q2xgTF9lBmP9KhsY61fZwFi/ygbG+lU2MNavsoGxfpUNjPWrbGCsX2UDAAgA61fVwFi/ygYAEADWr6oBAASA9atqAAABAIAAsP5/6f7lgQEAKgA+5/6bAAAgOv21GQBQXP8F01+YAQAtAH9c/3oGAAgB2GT9ixkAoAJgw/WvZACABIDN17+MAQDWB7DT+tcwAMDiAHZd/wIGAAAAAACsnwEAAAAAgHUAXG39ZzcAAAAAAAAAAAAAAAAAAAAAAAAAAHBeAFde/6kNAOAbwDcAAAAAAAAAAAAAAAAAAAAAAAAAAIBfg/o1KAAAAAAAA/4WDAAAAADAgJtRAGDA3VgAuBkOAADcDQoAAG6HBgAA7wcAAIBFGaz6KADovh4vPn0AvB/yBxK1jwwAAOkAAAAAAAAAAAAAAAAAAAAA2BrA49Oztg0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHAOIAAAEAAACAAABAAAAgAAAQCAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAfQAAgAAAQAAAIAAAEAAACAAABAAAAgAAAQCAe4HcCwQAAAAAAAAAAAAAAAAAAAAAAAAAIACcA8g5AAACAAABAIAAAEAAACAAABAAAAgAAAQAAAIAAAEAgAAAQAAAIAAAEAAACAAABAAAAgAAAcCAzrx+AAQAAAIAAAGwFADX+BzzXiAAAAAAAAAAAAAAAADYy4C9HhDAAZcGgAAAQAA4DVDqBAAAAQCAAGBAzfUDIAAODIAB6wfAgAAIA2DA+usAGLB+AIwJgDAABqy/DoAB668DYMD66wAYsP46AAasvw6AAeuvA2DA+usAGLD+OgAMTB8ABqw/DwAD0wcAA9MHgAS7B4AEuwcADEMHQAJAAkACQAJAAkACQAB4BAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQLq4D0z6KxD1gcm/AAAAAElFTkSuQmCC" />
+  <style>
+:root{
+  --bg:#0b0d12;
+  --panel:#14171e;
+  --panel2:#1b1f28;
+  --line:rgba(255,255,255,.07);
+  --txt:#eef1f6;
+  --muted:#9aa3b2;
+  --accent:#6ee7c7;
+  --accent-ink:#04201a;
+  --accent-soft:rgba(110,231,199,.14);
+  --red:#ff7a7a;
+  --amber:#ffc46b;
+  --green:#6ee7c7;
+  --blue:#7aa2ff;
+  --violet:#a78bfa;
+  --gray:#9aa3b2;
+  --tap:50px;
+  --radius:20px;
+  --radius-sm:14px;
+  --shadow:0 12px 30px -16px rgba(0,0,0,.85), inset 0 1px 0 rgba(255,255,255,.04);
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0;color:var(--txt);
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Segoe UI",Roboto,sans-serif;
+  font-size:16px;line-height:1.55;
+  background:
+    radial-gradient(130% 90% at 50% -15%, #161a22 0%, #0b0d12 55%) fixed,
+    var(--bg);
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+}
+.tnum,.big,.stat .v,.item .amt,.amount-input{font-variant-numeric:tabular-nums;font-feature-settings:"tnum"}
+button{font-family:inherit;cursor:pointer}
+::selection{background:var(--accent-soft);color:var(--txt)}
+
+/* 顶部栏 */
+.topbar{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:12px;
+  padding:12px 16px;
+  background:rgba(11,13,18,.72);backdrop-filter:blur(18px) saturate(140%);
+  -webkit-backdrop-filter:blur(18px) saturate(140%);
+  border-bottom:1px solid var(--line)}
+.topbar h1{font-size:18px;margin:0;font-weight:600;letter-spacing:.01em}
+.icon-btn{width:var(--tap);height:var(--tap);border-radius:var(--radius-sm);border:1px solid var(--line);
+  background:var(--panel);color:var(--txt);font-size:20px;line-height:1;
+  display:flex;align-items:center;justify-content:center;transition:.15s}
+.icon-btn:active{transform:scale(.94);background:var(--panel2)}
+.topbar-spacer{flex:1}
+
+/* 抽屉 */
+.scrim{position:fixed;inset:0;background:rgba(4,6,10,.55);opacity:0;visibility:hidden;
+  backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px);transition:.25s;z-index:40}
+.scrim.show{opacity:1;visibility:visible}
+.drawer{position:fixed;top:0;left:0;height:100%;width:272px;max-width:84vw;
+  background:rgba(20,23,30,.82);backdrop-filter:blur(24px) saturate(150%);
+  -webkit-backdrop-filter:blur(24px) saturate(150%);
+  border-right:1px solid var(--line);transform:translateX(-106%);
+  transition:.26s cubic-bezier(.22,.61,.36,1);z-index:50;display:flex;flex-direction:column}
+.drawer.show{transform:translateX(0)}
+.drawer-head{padding:26px 20px 18px;font-weight:700;font-size:18px;letter-spacing:.02em;
+  border-bottom:1px solid var(--line);
+  background:linear-gradient(180deg,rgba(110,231,199,.08),transparent)}
+.menu{list-style:none;margin:0;padding:10px;flex:1;overflow:auto}
+.menu li{position:relative;display:flex;align-items:center;gap:12px;padding:15px 14px;border-radius:var(--radius-sm);
+  font-size:15.5px;color:var(--muted);margin-bottom:5px;transition:.15s}
+.menu li .dot{width:26px;height:26px;border-radius:9px;display:flex;align-items:center;justify-content:center;
+  background:var(--panel2);font-size:15px;transition:.15s}
+.menu li:active{background:var(--panel2)}
+.menu li.active{color:#fff;background:var(--accent-soft)}
+.menu li.active::before{content:"";position:absolute;left:0;top:50%;transform:translateY(-50%);
+  width:3px;height:22px;border-radius:3px;background:var(--accent)}
+.menu li.active .dot{background:rgba(110,231,199,.18);filter:drop-shadow(0 0 8px rgba(110,231,199,.5))}
+.drawer-foot{padding:14px 20px;font-size:11.5px;color:var(--muted);border-top:1px solid var(--line);opacity:.7}
+
+/* 内容 */
+.content{max-width:480px;margin:0 auto;padding:18px 16px 48px}
+.card{background:linear-gradient(180deg,var(--panel),#12151b);border:1px solid var(--line);
+  border-radius:var(--radius);padding:18px;margin-bottom:16px;box-shadow:var(--shadow);
+  animation:cardIn .32s ease both}
+@keyframes cardIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.card h2{font-size:14px;margin:0 0 14px;font-weight:600;letter-spacing:.06em;color:var(--muted);
+  display:flex;align-items:center;gap:9px;padding-left:12px;position:relative}
+.card h2::before{content:"";position:absolute;left:0;top:50%;transform:translateY(-50%);
+  width:3px;height:15px;border-radius:3px;background:var(--accent);box-shadow:0 0 8px rgba(110,231,199,.5)}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.muted{color:var(--muted);font-size:13px}
+.big{font-size:34px;font-weight:700;letter-spacing:-.02em}
+.center{text-align:center}
+
+/* 大按钮 */
+.btn{height:var(--tap);min-width:var(--tap);padding:0 20px;border-radius:var(--radius-sm);
+  border:1px solid var(--line);background:var(--panel2);color:var(--txt);font-size:15.5px;font-weight:600;
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:.15s}
+.btn:active{transform:scale(.97)}
+.btn.primary{background:linear-gradient(135deg,#7eeed6,#4fd1b5);border-color:transparent;color:var(--accent-ink);
+  box-shadow:0 8px 20px -10px rgba(110,231,199,.6)}
+.btn.green{background:linear-gradient(135deg,#7eeed6,#4fd1b5);border-color:transparent;color:var(--accent-ink)}
+.btn.amber{background:linear-gradient(135deg,#ffd28a,#ffb454);border-color:transparent;color:#3a2600}
+.btn.ghost{background:transparent}
+.btn.block{width:100%}
+.btn.sm{height:40px;min-width:40px;padding:0 14px;font-size:14px}
+
+/* 选项标签 */
+.chips{display:flex;flex-wrap:wrap;gap:9px}
+.chip{padding:13px 14px;border-radius:var(--radius-sm);border:1px solid var(--line);
+  background:var(--panel2);color:var(--muted);font-size:14.5px;font-weight:600;flex:1;text-align:center;min-width:84px;transition:.15s}
+.chip:active{transform:scale(.97)}
+.chip.on{color:#fff;border-color:transparent}
+.chip.on.c-need{background:linear-gradient(135deg,#8fb3ff,#5b8cff);color:#06122e}
+.chip.on.c-want{background:linear-gradient(135deg,#ffd28a,#ffb454);color:#3a2600}
+.chip.on.c-acc{background:linear-gradient(135deg,#ff9a9a,#ff6b6b);color:#3a0000}
+.chip.on.c-mood{background:linear-gradient(135deg,#bda4ff,#8b6cff);color:#1a0f3a}
+.chip.on.c-body{background:linear-gradient(135deg,#7eeed6,#4fd1b5);color:#04201a}
+
+/* 输入 */
+input,select,textarea{width:100%;height:var(--tap);border-radius:var(--radius-sm);border:1px solid var(--line);
+  background:var(--panel2);color:var(--txt);font-size:16px;padding:0 14px;font-family:inherit;
+  transition:.15s;outline:none}
+input:focus,select:focus,textarea:focus{border-color:var(--accent);
+  box-shadow:0 0 0 3px var(--accent-soft);background:var(--panel)}
+textarea{height:auto;padding:12px 14px;min-height:84px;line-height:1.5}
+label.field{display:block;margin-bottom:14px}
+label.field>span{display:block;font-size:12.5px;color:var(--muted);margin-bottom:7px;letter-spacing:.02em}
+.amount-input{font-size:36px;font-weight:700;text-align:center;height:66px;letter-spacing:-.02em}
+
+/* 列表项 */
+.item{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);padding:14px 16px;
+  margin-bottom:11px;display:flex;flex-direction:column;gap:8px;transition:.15s}
+.item:active{background:var(--panel2)}
+.item .top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.item .amt{font-size:18px;font-weight:700}
+.item .tags{display:flex;gap:7px;flex-wrap:wrap}
+.tag{font-size:11.5px;padding:4px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted);background:var(--panel2)}
+.tag.need{color:#a9c2ff;border-color:rgba(122,162,255,.4);background:rgba(122,162,255,.1)}
+.tag.want{color:#ffd28a;border-color:rgba(255,180,84,.4);background:rgba(255,180,84,.1)}
+.tag.acc{color:#ff9a9a;border-color:rgba(255,107,107,.4);background:rgba(255,107,107,.1)}
+.tag.mood{color:#bda4ff;border-color:rgba(167,139,250,.4);background:rgba(167,139,250,.1)}
+.tag.body{color:#7eeed6;border-color:rgba(110,231,199,.4);background:rgba(110,231,199,.1)}
+.del{color:var(--red);background:transparent;border:none;font-size:13px;padding:4px 8px}
+
+/* 进度条 */
+.bar{height:11px;border-radius:999px;background:var(--panel2);overflow:hidden;border:1px solid var(--line)}
+.bar>i{display:block;height:100%;background:linear-gradient(90deg,#6ee7c7,#7aa2ff);border-radius:999px;
+  box-shadow:0 0 12px -2px rgba(110,231,199,.6);transition:width .5s ease}
+
+/* 统计块 */
+.stat{display:flex;flex-direction:column;gap:3px}
+.stat .v{font-size:26px;font-weight:700;letter-spacing:-.01em}
+.stat .k{font-size:11.5px;color:var(--muted);letter-spacing:.02em}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:5px 11px;border-radius:999px;
+  background:var(--panel2);border:1px solid var(--line);font-size:12.5px;color:var(--muted)}
+.pill.warn{color:#ffd28a;border-color:rgba(255,180,84,.45);background:rgba(255,180,84,.08)}
+.pill.bad{color:#ff9a9a;border-color:rgba(255,107,107,.45);background:rgba(255,107,107,.08)}
+.pill.good{color:#7eeed6;border-color:rgba(110,231,199,.45);background:rgba(110,231,199,.08)}
+.empty{text-align:center;color:var(--muted);padding:34px 10px;font-size:14px;opacity:.8}
+.toast{position:fixed;left:50%;bottom:32px;transform:translateX(-50%) translateY(20px);
+  background:rgba(20,23,30,.95);color:#fff;padding:13px 20px;border-radius:14px;font-size:14px;opacity:0;
+  transition:.25s;z-index:99;pointer-events:none;max-width:90vw;border:1px solid var(--line);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 12px 30px -12px rgba(0,0,0,.8)}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.seg{display:flex;background:var(--panel2);border:1px solid var(--line);border-radius:var(--radius-sm);overflow:hidden}
+.seg button{flex:1;height:var(--tap);border:none;background:transparent;color:var(--muted);font-size:14.5px;font-weight:600;transition:.15s}
+.seg button.on{background:var(--accent);color:var(--accent-ink)}
+
+/* 副业试错 · 页内三块 tab */
+.tabs{display:flex;gap:6px;margin:0 0 14px}
+.tab{flex:1;height:44px;border:1px solid var(--line);background:var(--panel2);color:var(--muted);
+  font-size:14px;font-weight:600;border-radius:var(--radius-sm);transition:.15s}
+.tab:active{transform:scale(.98)}
+.tab.on{background:var(--accent);color:var(--accent-ink);border-color:transparent;
+  box-shadow:0 8px 20px -10px rgba(110,231,199,.6)}
+/* 想法项目 · AI 方案步骤 */
+.plan-step{background:var(--panel2);border:1px solid var(--line);border-radius:14px;
+  padding:12px 14px;margin-top:10px;display:flex;flex-direction:column;gap:6px}
+
+
+/* ===== PWA / iPhone 16 Pro 适配 ===== */
+* { -webkit-tap-highlight-color: transparent; -webkit-touch-callout: none; }
+html, body { overscroll-behavior-y: none; background: #0b0d12; position: fixed; inset: 0; width: 100%; height: 100%; }
+body { height: 100vh; height: 100dvh; }
+#content { overflow-y: auto; -webkit-overflow-scrolling: touch;
+  padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 16px) !important; }
+.topbar { padding-top: calc(env(safe-area-inset-top, 0px) + 14px) !important; }
+.drawer { padding-top: env(safe-area-inset-top, 0px) !important; }
+/* iPhone 16 Pro (393x852 @3x, Dynamic Island) 微调 */
+@media (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) {
+  .topbar h1 { font-size: 19px; }
+  .icon-btn { font-size: 22px; }
+}
+
+  </style>
+  
+</head>
+<body>
+  <!-- 顶部栏：☰ 在窄屏展开菜单 -->
+  <header class="topbar">
+    <button id="menuBtn" class="icon-btn" aria-label="菜单">☰</button>
+    <h1 id="pageTitle">今日速记</h1>
+    <span class="topbar-spacer"></span>
+  </header>
+
+  <!-- 左侧抽屉菜单（默认收起） -->
+  <div id="scrim" class="scrim"></div>
+  <nav id="drawer" class="drawer">
+    <div class="drawer-head">财务工作台</div>
+    <ul class="menu">
+      <li data-page="quick"><span class="dot">⚡</span>今日速记</li>
+      <li data-page="ledger"><span class="dot">📒</span>流水账</li>
+      <li data-page="debt"><span class="dot">🏦</span>负债和蓄水池</li>
+      <li data-page="side"><span class="dot">🧪</span>副业试错</li>
+      <li data-page="checkup"><span class="dot">🩺</span>体检和里程碑</li>
+      <li data-page="cooldown"><span class="dot">⏳</span>大额冷静期</li>
+      <li data-page="settings"><span class="dot">⚙️</span>设置</li>
+    </ul>
+    <div class="drawer-foot">数据每天自动备份 · 2026</div>
+  </nav>
+
+  <main id="content" class="content"><!-- 各页面渲染在此 --></main>
+
+  <script>
+'use strict';
+/* ============ 财务工作台 · 前端逻辑 ============ */
+const $ = (s, r=document) => r.querySelector(s);
+const $$ = (s, r=document) => Array.from(r.querySelectorAll(s));
+
+const CATS = [['necessary','必要花'],['want','想要花'],['unexpected','意外花']];
+const MOODS = [['bored','无聊'],['tired','累'],['anxious','焦虑'],['happy','开心'],['none','没情绪']];
+const BODIES = [['hungry','饿'],['full','饱'],['normal','正常']];
+const DEBTTYPES = [['huabei','花呗'],['yuefu','月付'],['meituan','美团月付'],['credit','信用卡'],['borrow','借别人']];
+const CATLABEL = Object.fromEntries(CATS), MOODLABEL = Object.fromEntries(MOODS), BODYLABEL = Object.fromEntries(BODIES), DEBTLABEL = Object.fromEntries(DEBTTYPES);
+const BAD_MOODS = ['bored','tired','anxious'];
+
+let STATE = null;
+let curPage = 'quick';
+let ledgerMonth = monthKey(new Date());
+let quickForm = { category:null, mood:null, body:null };
+let sideTab = 'wallet';
+let debtTab = 'debt';
+let checkupTab = 'report';
+let coolTab = 'list';
+let setTab = 'basic';
+
+/* ---------- 工具 ---------- */
+function uid(){ return Date.now().toString(36)+Math.random().toString(36).slice(2,7); }
+function fmt(n){ n = Number(n)||0; return '¥'+(Math.round(n*100)/100).toLocaleString('zh-CN'); }
+function monthKey(d){ return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0'); }
+function monthLabel(m){ const [y,mm]=m.split('-'); return y+'年'+Number(mm)+'月'; }
+function monthRecords(){ return STATE.records.filter(r=>r.ts.slice(0,7)===ledgerMonth); }
+function esc(s){ return String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+
+function emotionTax(recs){
+  let bad=0, ht=0, total=0;
+  recs.forEach(r=>{ total+=Number(r.amount)||0; if(BAD_MOODS.includes(r.mood)) bad+=Number(r.amount)||0; if(r.body==='hungry'||r.mood==='tired') ht+=Number(r.amount)||0; });
+  return { bad, ht, total };
+}
+function savedThisMonth(){ // 冷静期没买省下的
+  const m = monthKey(new Date());
+  return STATE.cooldown.filter(c=>c.status==='skipped'&&c.ts.slice(0,7)===m).reduce((s,c)=>s+(Number(c.amount)||0),0);
+}
+
+/* ---------- 数据读写（纯前端 · localStorage） ---------- */
+const LS_KEY = 'finance_workbench_v1';
+function defaultState(){ return {
+  meta:{version:1},
+  settings:{payday:10,paydayTransfer:2000,monthlyExpense:5000,reservoirTargetMonths:6,income:0,trialWalletAmount:800,aiMonthlyBudget:5,repayDays:{},reminders:{payday:true,cooldown:true,weeklyAction:true,monthEnd:true}},
+  records:[], debts:[], reservoir:{current:0},
+  sideHustle:{actions:[],abandon:[],ideas:[]}, cooldown:[], annualGoals:[], history:{}
+}; }
+async function load(){
+  try{ const raw=localStorage.getItem(LS_KEY); STATE = raw? JSON.parse(raw): defaultState(); }
+  catch(e){ STATE=defaultState(); }
+  if(!STATE.history) STATE.history={};
+  if(!STATE.sideHustle) STATE.sideHustle={actions:[],abandon:[],ideas:[]};
+  if(!STATE.sideHustle.ideas) STATE.sideHustle.ideas=[];
+}
+async function save(){ try{ localStorage.setItem(LS_KEY, JSON.stringify(STATE)); }catch(e){ toast('保存失败：浏览器存储空间不足'); } }
+
+/* ---------- 导航 / 抽屉 ---------- */
+const TITLES = {quick:'今日速记',ledger:'流水账',debt:'负债和蓄水池',side:'副业试错',checkup:'体检和里程碑',cooldown:'大额冷静期',settings:'设置'};
+function nav(page){
+  curPage = page; ledgerMonth = monthKey(new Date());
+  $('#pageTitle').textContent = TITLES[page]||'';
+  $$('.menu li').forEach(li=>li.classList.toggle('active', li.dataset.page===page));
+  closeDrawer(); render();
+}
+function openDrawer(){ $('#drawer').classList.add('show'); $('#scrim').classList.add('show'); }
+function closeDrawer(){ $('#drawer').classList.remove('show'); $('#scrim').classList.remove('show'); }
+function toast(msg){ const t=$('#toast')||(()=>{const e=document.createElement('div');e.id='toast';e.className='toast';document.body.appendChild(e);return e;})(); t.textContent=msg; t.classList.add('show'); clearTimeout(t._t); t._t=setTimeout(()=>t.classList.remove('show'),1800); }
+
+/* ---------- 渲染分发 ---------- */
+function render(){
+  const c = $('#content');
+  if(curPage==='quick') c.innerHTML = viewQuick();
+  else if(curPage==='ledger') c.innerHTML = viewLedger();
+  else if(curPage==='debt') c.innerHTML = viewDebt();
+  else if(curPage==='side') c.innerHTML = viewSide();
+  else if(curPage==='checkup') c.innerHTML = viewCheckup();
+  else if(curPage==='cooldown') c.innerHTML = viewCooldown();
+  else if(curPage==='settings') c.innerHTML = viewSettings();
+  bindChips();
+}
+
+/* ============ 1. 今日速记 ============ */
+function viewQuick(){
+  const chipGroup=(group,arr,cls)=>`<div class="chips">${arr.map(([v,l])=>`<button class="chip ${cls}" data-act="chip" data-group="${group}" data-val="${v}">${l}</button>`).join('')}</div>`;
+  return `
+  <div class="card center">
+    <div class="muted">五秒记一笔 · 纯记录，别想太多</div>
+    <input id="qAmount" class="amount-input" inputmode="decimal" placeholder="0" style="margin:14px 0;border:none;background:transparent" />
+    <label class="field" style="text-align:left"><span>这笔钱是</span>${chipGroup('category',CATS,'')}</label>
+    <label class="field" style="text-align:left"><span>当时心情</span>${chipGroup('mood',MOODS,'')}</label>
+    <label class="field" style="text-align:left"><span>身体状态</span>${chipGroup('body',BODIES,'')}</label>
+    <label class="field" style="text-align:left"><span>备注（可选）</span><input id="qNote" placeholder="比如：下班路上看到的" /></label>
+    <button class="btn primary block" data-act="quick-save">记一笔</button>
+  </div>`;
+}
+function bindChips(){
+  $$('.chip[data-act="chip"]').forEach(b=>{
+    b.onclick=()=>{
+      const g=b.dataset.group, v=b.dataset.val;
+      quickForm[g]= (quickForm[g]===v)?null:v;
+      $$('.chip[data-group="'+g+'"]').forEach(x=>x.classList.remove('on'));
+      if(quickForm[g]) b.classList.add('on');
+    };
+  });
+}
+
+/* ============ 2. 流水账 ============ */
+function viewLedger(){
+  const recs = monthRecords().slice().sort((a,b)=>b.ts.localeCompare(a.ts));
+  const tax = emotionTax(recs);
+  let list = recs.length? recs.map(r=>`
+    <div class="item">
+      <div class="top"><span class="amt">${fmt(r.amount)}</span><button class="del" data-act="rec-del" data-id="${r.id}">删除</button></div>
+      <div class="muted">${r.ts.slice(5,16).replace('T',' ')}</div>
+      <div class="tags">
+        <span class="tag ${r.category==='necessary'?'need':r.category==='want'?'want':'acc'}">${CATLABEL[r.category]}</span>
+        <span class="tag mood">${MOODLABEL[r.mood]}</span>
+        <span class="tag body">${BODYLABEL[r.body]}</span>
+        ${r.note?`<span class="tag">${esc(r.note)}</span>`:''}
+      </div>
+    </div>`).join('') : `<div class="empty">这个月还没有记录</div>`;
+  return `
+  <div class="card">
+    <div class="seg">
+      <button data-act="ledger-prev">‹</button>
+      <button class="on" style="pointer-events:none">${monthLabel(ledgerMonth)}</button>
+      <button data-act="ledger-next">›</button>
+    </div>
+  </div>
+  <div class="card">
+    <h2>本月情绪税</h2>
+    <div class="grid2">
+      <div class="stat"><span class="v" style="color:var(--red)">${fmt(tax.bad)}</span><span class="k">情绪差时花的（无聊/累/焦虑）</span></div>
+      <div class="stat"><span class="v" style="color:var(--amber)">${fmt(tax.ht)}</span><span class="k">饿或累时花的</span></div>
+    </div>
+    <div class="muted" style="margin-top:10px">本月共花 ${fmt(tax.total)} · 冲动/情绪消费就是你要交的税</div>
+    <div class="muted" style="margin-top:6px">💡 本月冷静期省下 ${fmt(savedThisMonth())}</div>
+  </div>
+  <div class="card"><h2>记录列表</h2>${list}</div>`;
+}
+
+/* ============ 3. 负债和蓄水池 ============ */
+function viewDebt(){
+  const s=STATE.settings;
+  const totalRemain = STATE.debts.reduce((a,d)=>a+((Number(d.total)||0)-(Number(d.paid)||0)),0);
+  const totalPaid = STATE.debts.reduce((a,d)=>a+(Number(d.paid)||0),0);
+  const totalAll = STATE.debts.reduce((a,d)=>a+(Number(d.total)||0),0);
+  const pctAll = totalAll? Math.round(totalPaid/totalAll*100):0;
+  // 还款速度：近30天日均
+  const now=Date.now(), cut=now-30*864e5;
+  let repLast30=0; STATE.debts.forEach(d=>(d.repayments||[]).forEach(r=>{ if(new Date(r.ts).getTime()>=cut) repLast30+=Number(r.amount)||0; }));
+  const perDay = repLast30/30;
+  const days = perDay>0? Math.ceil(totalRemain/perDay):null;
+  const debtItems = STATE.debts.length? STATE.debts.map(d=>{
+    const remain=(Number(d.total)||0)-(Number(d.paid)||0);
+    const pct= d.total? Math.round((Number(d.paid)||0)/d.total*100):0;
+    const due= s.repayDays&&s.repayDays[d.id]? (' · 每月'+s.repayDays[d.id]+'号还'):'';
+    return `<div class="item">
+      <div class="top"><span><b>${esc(d.name)}</b> <span class="muted">${DEBTLABEL[d.type]||''}${due}</span></span><button class="del" data-act="debt-del" data-id="${d.id}">删</button></div>
+      <div class="top"><span class="amt">${fmt(remain)}</span><span class="muted">已还 ${fmt(d.paid)} / ${fmt(d.total)}</span></div>
+      <div class="bar"><i style="width:${pct}%"></i></div>
+      <button class="btn sm green" data-act="debt-repay" data-id="${d.id}">记一笔还款</button>
+    </div>`;
+  }).join('') : `<div class="empty">还没有负债记录</div>`;
+
+  const target = (Number(s.monthlyExpense)||0)*(Number(s.reservoirTargetMonths)||0);
+  const cur = Number(STATE.reservoir.current)||0;
+  const rp = target? Math.round(cur/target*100):0;
+  const paydayNear = Math.abs(((s.payday||1) - new Date().getDate()))<=3;
+  const debtPane = `
+  <div class="card">
+    <h2>负债总览</h2>
+    <div class="grid2">
+      <div class="stat"><span class="v" style="color:var(--red)">${fmt(totalRemain)}</span><span class="k">还欠多少</span></div>
+      <div class="stat"><span class="v">${pctAll}%</span><span class="k">整体已还比例</span></div>
+    </div>
+    <div class="muted" style="margin-top:8px">${days? `按近30天速度（${fmt(perDay)}/天），约 ${days} 天还清` : '记一笔还款后才会估算还清天数'}</div>
+  </div>
+  <div class="card">
+    <h2>新增负债</h2>
+    <label class="field"><span>名称</span><input id="dName" placeholder="比如 花呗" /></label>
+    <label class="field"><span>类型</span><select id="dType">${DEBTTYPES.map(([v,l])=>`<option value="${v}">${l}</option>`).join('')}</select></label>
+    <label class="field"><span>总额</span><input id="dTotal" inputmode="decimal" placeholder="0" /></label>
+    <label class="field"><span>每月还款日（可选）</span><input id="dDue" inputmode="numeric" placeholder="几号" /></label>
+    <button class="btn primary block" data-act="debt-add">添加负债</button>
+  </div>
+  <div class="card"><h2>各笔负债</h2>${debtItems}</div>`;
+  const reservoirPane = `
+  <div class="card">
+    <h2>蓄水池（应急卡）</h2>
+    <div class="stat"><span class="v" style="color:var(--green)">${fmt(cur)}</span><span class="k">已存 · 目标 ${fmt(target)}（${s.reservoirTargetMonths||0}个月生活费）</span></div>
+    <div class="bar" style="margin:10px 0"><i style="width:${rp}%"></i></div>
+    <div class="muted">还差 ${fmt(Math.max(0,target-cur))}</div>
+    ${paydayNear?`<div class="pill warn" style="margin-top:10px">💰 发工资啦：记得转 ${fmt(s.paydayTransfer||0)} 到应急卡，剩下的才是这个月能花的</div>`:''}
+    <button class="btn green block" style="margin-top:10px" data-act="reservoir-add">已转 ${fmt(s.paydayTransfer||0)} 到应急卡</button>
+  </div>`;
+  return `
+  <div class="tabs">
+    <button class="tab ${debtTab==='debt'?'on':''}" data-act="debt-tab" data-tab="debt">负债</button>
+    <button class="tab ${debtTab==='reservoir'?'on':''}" data-act="debt-tab" data-tab="reservoir">蓄水池</button>
+  </div>
+  ${debtTab==='debt'?debtPane:reservoirPane}`;
+}
+
+/* ============ 4. 副业试错 ============ */
+function viewSide(){
+  return `
+  <div class="tabs">
+    <button class="tab ${sideTab==='wallet'?'on':''}" data-act="side-tab" data-tab="wallet">试错钱包</button>
+    <button class="tab ${sideTab==='ideas'?'on':''}" data-act="side-tab" data-tab="ideas">想法项目</button>
+    <button class="tab ${sideTab==='ledger'?'on':''}" data-act="side-tab" data-tab="ledger">试错账本</button>
+  </div>
+  ${sideTab==='wallet'?viewSideWallet():sideTab==='ideas'?viewSideIdeas():viewSideLedger()}
+  `;
+}
+
+function viewSideWallet(){
+  const s=STATE.settings; const m=monthKey(new Date());
+  const acts = STATE.sideHustle.actions.filter(a=>a.ts.slice(0,7)===m);
+  const spent = acts.reduce((a,x)=>a+(Number(x.cost)||0),0);
+  const remain = (Number(s.trialWalletAmount)||0)-spent;
+  const empty = remain<=0;
+  const list = STATE.sideHustle.actions.length? STATE.sideHustle.actions.slice().reverse().map(a=>{
+    const done=a.status==='done';
+    return `<div class="item">
+      <div class="top"><b>${esc(a.desc)}</b>${done?`<span class="tag ${a.result==='earn'?'body':'mood'}">${a.result==='earn'?'赚了':'排除方向'}</span>`:''}</div>
+      <div class="muted">花 ${fmt(a.cost)} · 耗时 ${esc(a.time||'?')} · ${a.ts.slice(5,10)}</div>
+      <div class="row">${!done?`<button class="btn sm" data-act="side-done" data-id="${a.id}">做完·记录结果</button>`:''}${done?`<button class="del" data-act="led-del" data-id="${a.id}">删除</button>`:''}</div>
+    </div>`;
+  }).join('') : `<div class="empty">这个月还没开始试错</div>`;
+  const isSat = new Date().getDay()===6;
+  return `
+  <div class="card center">
+    <div class="muted">本月试错钱包</div>
+    <div class="big" style="color:${empty?'var(--red)':'var(--green)'}">${fmt(remain)}</div>
+    <div class="muted">预算 ${fmt(s.trialWalletAmount||0)} · 已花 ${fmt(spent)}</div>
+    ${empty?`<div class="pill bad" style="margin-top:8px">钱包空了 · 只能做免费动作（调研/找人聊）</div>`:''}
+  </div>
+  ${isSat?`<div class="pill warn" style="margin:0 14px 12px">📅 周六到了：想一个下一步动作，写下来要花多少钱、多少时间</div>`:''}
+  <div class="card">
+    <h2>记一个动作</h2>
+    <label class="field"><span>要做什么</span><input id="sDesc" placeholder="比如：上架一个小红书模板" /></label>
+    <div class="row">
+      <label class="field" style="flex:1"><span>花多少钱</span><input id="sCost" inputmode="decimal" placeholder="0" /></label>
+      <label class="field" style="flex:1"><span>多少时间</span><input id="sTime" placeholder="如 3h" /></label>
+    </div>
+    <button class="btn primary block" data-act="side-add">加进试错清单</button>
+  </div>
+  <div class="card"><h2>动作清单</h2>${list}</div>`;
+}
+
+function viewSideIdeas(){
+  const ideas = STATE.sideHustle.ideas.slice().reverse();
+  const list = ideas.length? ideas.map(ideaCard).join('') : `<div class="empty">还没有想法。写一句，让 AI 帮你拆成落地方案</div>`;
+  const usage = STATE.aiUsage||{};
+  const budget = Number(STATE.settings.aiMonthlyBudget)||5;
+  return `
+  <div class="card">
+    <h2>丢一个想法进来</h2>
+    <label class="field"><span>一句话，比如「周末帮人拍宠物写真」</span><input id="iText" placeholder="你的副业点子" /></label>
+    <button class="btn primary block" data-act="idea-gen">✨ AI 拆成落地方案</button>
+    <div class="muted" style="margin-top:8px">本月 AI 已用 ¥${(usage.cost||0).toFixed(2)} / 上限 ¥${budget}（未配置 AI 密钥时走本地生成，免费）</div>
+  </div>
+  ${list}`;
+}
+
+function ideaCard(idea){
+  const p=idea.plan||{}; const steps=(p.steps||[]);
+  const stepsHtml = steps.map((st,i)=>`
+    <div class="plan-step">
+      <div class="top"><b>${esc(st.title||('步骤'+(i+1)))}</b><span class="muted">${fmt(st.cost||0)} · ${esc(st.time||'?')}</span></div>
+      ${st.prepare?`<div class="muted">准备：${esc(st.prepare)}</div>`:''}
+      ${st.risk?`<div class="muted">风险：${esc(st.risk)}</div>`:''}
+      ${st.verify?`<div class="muted">验证：${esc(st.verify)}</div>`:''}
+      <button class="btn sm" data-act="idea-to-wallet" data-id="${idea.id}" data-step="${i}">加入钱包</button>
+    </div>`).join('');
+  return `
+  <div class="card">
+    <div class="top" style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px">
+      <div><b>${esc(idea.text)}</b><div class="muted">${idea.source==='ai'?'🤖 AI 生成':'🧩 本地模板'}</div></div>
+      <button class="del" data-act="idea-del" data-id="${idea.id}">删</button>
+    </div>
+    ${p.summary?`<div class="muted" style="margin:8px 0">${esc(p.summary)}</div>`:''}
+    ${stepsHtml}
+    <button class="btn sm amber" data-act="idea-all-wallet" data-id="${idea.id}" style="margin-top:6px">全部加入钱包</button>
+  </div>`;
+}
+
+function viewSideLedger(){
+  const acts = STATE.sideHustle.actions.slice().reverse();
+  const actList = acts.length? acts.map(a=>{
+    const done=a.status==='done';
+    return `<div class="item">
+      <div class="top"><b>${esc(a.desc)}</b><span class="tag ${done?(a.result==='earn'?'body':'mood'):''}">${done?(a.result==='earn'?'赚了':'排除方向'):'进行中'}</span></div>
+      <div class="muted">花 ${fmt(a.cost)} · 耗时 ${esc(a.time||'?')} · ${a.ts.slice(5,10)}</div>
+      <button class="del" data-act="led-del" data-id="${a.id}">删除</button>
+    </div>`;
+  }).join('') : `<div class="empty">还没有试错动作</div>`;
+  const aban = STATE.sideHustle.abandon.length? STATE.sideHustle.abandon.slice().reverse().map(a=>`<div class="item"><div class="top"><span>${esc(a.text)}</span><button class="del" data-act="aban-del" data-id="${a.id}">删</button></div><div class="muted">${a.ts.slice(0,10)}</div></div>`).join('') : `<div class="empty">放弃清单空着</div>`;
+  return `
+  <div class="card"><h2>试错账本</h2>${actList}
+    <div class="muted" style="margin-top:10px">重复踩坑时，翻翻下面的放弃清单。</div>
+  </div>
+  <div class="card">
+    <h2>放弃清单</h2>
+    <div class="muted" style="margin-bottom:8px">决定不做什么，避免下次重踩坑</div>
+    <label class="field"><input id="aText" placeholder="比如：不做付费投放" /></label>
+    <button class="btn amber block" data-act="aban-add">加入放弃清单</button>
+    <div style="margin-top:10px">${aban}</div>
+  </div>`;
+}
+
+function localGenIdea(text){
+  const t = (text||'').toLowerCase();
+  let domain='通用小生意';
+  if(/(拍|写真|摄影|照片|约拍|相机|头像)/.test(t)) domain='摄影/约拍';
+  else if(/(小红书|抖音|视频|b站|公众号|自媒体|博主|内容)/.test(t)) domain='内容/自媒体';
+  else if(/(淘宝|电商|网店|带货|闲鱼|二手|卖货|代购)/.test(t)) domain='电商/二手';
+  else if(/(代码|程序|软件|工具|app|网站|脚本|开发|自动化|爬虫|插件)/.test(t)) domain='代码/工具';
+  else if(/(咨询|服务|代|陪|教|课|辅导|设计|翻译|文案|剪辑|整理)/.test(t)) domain='技能服务';
+  const steps=[
+    {title:'周六动作：轻量验证',cost:'0~50',time:'2~3h',prepare:'锁定你想服务的人和最痛的一个点',risk:'想太大做不动，先缩小到一次能完成',verify:'有没有人愿意为此付钱或表现兴趣'},
+    {title:'准备最小物料',cost:'0~100',time:'3~5h',prepare:'一个展示页 / 样品 / 一条内容',risk:'设备素材不够，先用免费工具顶上',verify:'做出一个能给人看的东西'},
+    {title:'小范围试水',cost:'0~200',time:'4~6h',prepare:'发到对应圈子 / 社群 / 平台',risk:'没人理，先调标题和受众',verify:'拿到第一个真实反馈或询问'},
+    {title:'判断是否继续',cost:'0',time:'1h',prepare:'看投入产出比',risk:'别陷沉没成本，该停就停',verify:'能赚回试错成本并可持续吗'},
+  ];
+  return {source:'local', plan:{summary:`「${text}」试错落地方案（${domain} · 本地模板）`, steps}};
+}
+async function genIdea(){
+  const el=$('#iText'); const text=(el&&el.value||'').trim(); if(!text){ toast('先写一句想法'); return; }
+  const btn=document.querySelector('[data-act="idea-gen"]'); if(btn){ btn.disabled=true; btn.textContent='生成中…'; }
+  try{
+    const j = localGenIdea(text);
+    STATE.sideHustle.ideas.push({id:uid(),ts:new Date().toISOString(),text,plan:j.plan,source:j.source});
+    await save(); toast('方案已生成（本地）');
+  }catch(e){ toast('生成失败'); }
+  if(btn){ btn.disabled=false; btn.textContent='✨ AI 拆成落地方案'; }
+  render();
+}
+
+/* ============ 5. 体检和里程碑 ============ */
+function viewCheckup(){
+  const m = ledgerMonth; const recs = STATE.records.filter(r=>r.ts.slice(0,7)===m);
+  const tax = emotionTax(recs);
+  const s=STATE.settings;
+  const income=Number(s.income)||0;
+  const savedPct = income>0? Math.round((income-tax.total)/income*100):null;
+  const emotionPct = tax.total>0? Math.round(tax.bad/tax.total*100):0;
+  const debtNow = STATE.debts.reduce((a,d)=>a+((Number(d.total)||0)-(Number(d.paid)||0)),0);
+  const hist = STATE.history[m]||{};
+  const debtDelta = hist.debtTotal!=null? debtNow-hist.debtTotal : null;
+  const target=(Number(s.monthlyExpense)||0)*(Number(s.reservoirTargetMonths)||0);
+  const cur=Number(STATE.reservoir.current)||0;
+  const sideSpend = STATE.sideHustle.actions.filter(a=>a.ts.slice(0,7)===m).reduce((a,x)=>a+(Number(x.cost)||0),0);
+  const earnN = STATE.sideHustle.actions.filter(a=>a.ts.slice(0,7)===m&&a.result==='earn').length;
+  const exclN = STATE.sideHustle.actions.filter(a=>a.ts.slice(0,7)===m&&a.result==='exclude').length;
+  // 存快照
+  STATE.history[m]={debtTotal:debtNow,reservoir:cur,savedPct,emotionPct}; save();
+
+  const goals = STATE.annualGoals.length? STATE.annualGoals.map(g=>{
+    const pct= g.target? Math.round((Number(g.current)||0)/g.target*100):0;
+    return `<div class="item">
+      <div class="top"><b>${esc(g.text)}</b><button class="del" data-act="goal-del" data-id="${g.id}">删</button></div>
+      <div class="muted">${fmt(g.current)} / ${fmt(g.target)} ${esc(g.unit||'')}</div>
+      <div class="bar"><i style="width:${pct}%"></i></div>
+      <div class="row" style="margin-top:6px">
+        <input id="gcur-${g.id}" inputmode="decimal" placeholder="更新当前值" style="flex:1" />
+        <button class="btn sm" data-act="goal-update" data-id="${g.id}">更新</button>
+      </div>
+    </div>`;
+  }).join('') : `<div class="empty">还没设年度目标</div>`;
+
+  const reportPane = `
+  <div class="card">
+    <div class="seg"><button data-act="ledger-prev">‹</button><button class="on" style="pointer-events:none">${monthLabel(m)}体检</button><button data-act="ledger-next">›</button></div>
+  </div>
+  <div class="card">
+    <h2>本月五分钟体检</h2>
+    <div class="grid2">
+      <div class="stat"><span class="v" style="color:${savedPct!=null&&savedPct>=0?'var(--green)':'var(--red)'}">${savedPct!=null?savedPct+'%':'—'}</span><span class="k">存下收入的比例</span></div>
+      <div class="stat"><span class="v" style="color:var(--amber)">${emotionPct}%</span><span class="k">情绪消费占比</span></div>
+      <div class="stat"><span class="v">${fmt(debtNow)}</span><span class="k">当前总负债${debtDelta!=null?` (${debtDelta>0?'+':''}${fmt(debtDelta)})`:''}</span></div>
+      <div class="stat"><span class="v" style="color:var(--green)">${fmt(cur)}</span><span class="k">蓄水池 / 目标 ${fmt(target)}</span></div>
+    </div>
+    <div class="muted" style="margin-top:10px">副业试错花 ${fmt(sideSpend)} · 赚 ${earnN} 单 · 排除 ${exclN} 个方向</div>
+  </div>`;
+  const goalsPane = `
+  <div class="card">
+    <h2>年度目标</h2>
+    <label class="field"><span>目标</span><input id="gText" placeholder="比如 应急卡存到 5 万" /></label>
+    <div class="row">
+      <label class="field" style="flex:1"><span>目标值</span><input id="gTarget" inputmode="decimal" placeholder="50000" /></label>
+      <label class="field" style="flex:1"><span>当前值</span><input id="gCur" inputmode="decimal" placeholder="0" /></label>
+    </div>
+    <label class="field"><span>单位（可选）</span><input id="gUnit" placeholder="如 万 / 月" /></label>
+    <button class="btn primary block" data-act="goal-add">添加目标</button>
+    <div style="margin-top:10px">${goals}</div>
+  </div>`;
+  return `
+  <div class="tabs">
+    <button class="tab ${checkupTab==='report'?'on':''}" data-act="checkup-tab" data-tab="report">本月体检</button>
+    <button class="tab ${checkupTab==='goals'?'on':''}" data-act="checkup-tab" data-tab="goals">年度目标</button>
+  </div>
+  ${checkupTab==='report'?reportPane:goalsPane}`;
+}
+
+/* ============ 6. 大额冷静期 ============ */
+function viewCooldown(){
+  const now=Date.now();
+  const list = STATE.cooldown.length? STATE.cooldown.slice().reverse().map(c=>{
+    const left = new Date(c.decideAt).getTime()-now;
+    const waiting = c.status==='waiting';
+    const canDecide = !waiting || left<=0;
+    let state = waiting? (left>0?`⏳ 还需 ${fmtHours(left)}`:'⚠️ 72小时已到，可以决定了') : (c.status==='bought'?'✅ 买了':'💡 没买，省下 '+fmt(c.amount));
+    return `<div class="item">
+      <div class="top"><b>${esc(c.name)}</b><span class="amt">${fmt(c.amount)}</span></div>
+      <div class="muted">冲动 ${'★'.repeat(c.impulse||1)} · 情绪 ${MOODLABEL[c.emotion]||''} · ${c.ts.slice(0,10)}</div>
+      <div class="muted">${state}</div>
+      ${canDecide&&waiting?`<div class="row" style="margin-top:6px">
+        <button class="btn sm green" data-act="cool-resolve" data-id="${c.id}" data-status="bought">还是买了</button>
+        <button class="btn sm" data-act="cool-resolve" data-id="${c.id}" data-status="skipped">没买·省下</button>
+      </div>`:''}
+      ${waiting?`<button class="del" data-act="cool-del" data-id="${c.id}">删除</button>`:''}
+    </div>`;
+  }).join('') : `<div class="empty">没有在冷静的东西，省钱中 🎉</div>`;
+  const mNow = monthKey(new Date());
+  const savedList = STATE.cooldown.filter(c=>c.status==='skipped'&&c.ts.slice(0,7)===mNow);
+  const savedTotal = savedList.reduce((a,c)=>a+(Number(c.amount)||0),0);
+  const savedPane = `
+  <div class="card center">
+    <div class="muted">本月没买、省下的钱</div>
+    <div class="big" style="color:var(--green)">${fmt(savedTotal)}</div>
+    <div class="muted">冲动消费被你拦住了 ${savedList.length} 次</div>
+  </div>
+  ${savedList.length?`<div class="card"><h2>省下的明细</h2>${savedList.slice().reverse().map(c=>`<div class="item"><div class="top"><b>${esc(c.name)}</b><span class="amt">${fmt(c.amount)}</span></div><div class="muted">${c.ts.slice(0,10)} · 没买</div></div>`).join('')}</div>`:`<div class="empty">这个月还没拦住什么</div>`}`;
+  const listPane = `
+  <div class="card">
+    <h2>加一笔想买的东西</h2>
+    <div class="muted">超过 500 又不是必需？先丢进来，强制等 72 小时</div>
+    <label class="field" style="margin-top:8px"><span>买什么</span><input id="cName" placeholder="比如 新耳机" /></label>
+    <label class="field"><span>多少钱</span><input id="cAmount" inputmode="decimal" placeholder="0" /></label>
+    <label class="field"><span>冲动程度（1-5）</span><input id="cImpulse" inputmode="numeric" placeholder="1-5" /></label>
+    <label class="field"><span>当时情绪</span><select id="cEmotion">${MOODS.map(([v,l])=>`<option value="${v}">${l}</option>`).join('')}</select></label>
+    <button class="btn primary block" data-act="cool-add">开始冷静 72 小时</button>
+  </div>
+  <div class="card">
+    <h2>冷静清单</h2>
+    <div class="muted" style="margin-bottom:8px">本月已省下 ${fmt(savedThisMonth())}</div>
+    ${list}
+  </div>`;
+  return `
+  <div class="tabs">
+    <button class="tab ${coolTab==='list'?'on':''}" data-act="cool-tab" data-tab="list">冷静清单</button>
+    <button class="tab ${coolTab==='saved'?'on':''}" data-act="cool-tab" data-tab="saved">本月省下</button>
+  </div>
+  ${coolTab==='list'?listPane:savedPane}`;
+}
+function fmtHours(ms){ const h=Math.ceil(ms/36e5); const d=Math.floor(h/24); return d>0?`${d}天${h%24}小时`:`${h}小时`; }
+
+/* ============ 7. 设置 ============ */
+function viewSettings(){
+  const s=STATE.settings;
+  const rem = (k)=>`<label class="field"><span>${k.lbl}</span><input id="${k.id}" inputmode="numeric" value="${s[k.id]??''}" /></label>`;
+  const tabBar = `<div class="tabs">
+    <button class="tab ${setTab==='basic'?'on':''}" data-act="set-tab" data-tab="basic">基本</button>
+    <button class="tab ${setTab==='remind'?'on':''}" data-act="set-tab" data-tab="remind">提醒</button>
+    <button class="tab ${setTab==='backup'?'on':''}" data-act="set-tab" data-tab="backup">备份</button>
+  </div>`;
+  let body='';
+  if(setTab==='basic'){
+    body = `<div class="card">
+      <h2>基本设置</h2>
+      ${rem({id:'payday',lbl:'发工资日期（几号）'})}
+      ${rem({id:'paydayTransfer',lbl:'发工资转应急卡金额'})}
+      ${rem({id:'monthlyExpense',lbl:'月生活费（算蓄水池目标）'})}
+      ${rem({id:'reservoirTargetMonths',lbl:'蓄水池目标（几个月生活费）'})}
+      ${rem({id:'income',lbl:'月收入（算存下比例）'})}
+      ${rem({id:'trialWalletAmount',lbl:'副业试错月预算'})}
+      ${rem({id:'aiMonthlyBudget',lbl:'AI 每月调用上限（元）'})}
+      <button class="btn primary block" data-act="settings-save" style="margin-top:6px">保存设置</button>
+    </div>`;
+  } else if(setTab==='remind'){
+    body = `<div class="card">
+      <h2>提醒开关</h2>
+      ${['payday','cooldown','weeklyAction','monthEnd'].map(k=>{
+        const lbl={payday:'发工资转钱提醒',cooldown:'冷静期到期提醒',weeklyAction:'周六动作提醒',monthEnd:'月底体检提醒'}[k];
+        const on=s.reminders&&s.reminders[k];
+        return `<div class="row" style="justify-content:space-between;margin-bottom:10px"><span>${lbl}</span><button class="btn sm ${on?'green':'ghost'}" data-act="rem-toggle" data-k="${k}">${on?'开':'关'}</button></div>`;
+      }).join('')}
+    </div>`;
+  } else {
+    body = `<div class="card">
+      <h2>数据备份</h2>
+      <div class="muted" style="margin-bottom:10px">数据存在本机浏览器，实时自动保存；换手机或清缓存会丢，记得定期导出。</div>
+      <button class="btn block" data-act="backup-now">⬇ 导出备份文件（JSON）</button>
+      <button class="btn amber block" style="margin-top:10px" data-act="import-open">⬆ 导入备份文件</button>
+      <input type="file" id="importFile" accept="application/json" style="display:none" />
+      <div class="muted" style="margin-top:10px">导入会覆盖当前数据，建议先导出再导入。</div>
+    </div>`;
+  }
+  return tabBar + body;
+}
+
+function exportData(){
+  try{
+    const blob=new Blob([JSON.stringify(STATE,null,2)],{type:'application/json'});
+    const a=document.createElement('a'); a.href=URL.createObjectURL(blob);
+    a.download='财务工作台-'+new Date().toISOString().slice(0,10)+'.json'; a.click();
+    setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+    toast('已导出备份 ✓');
+  }catch(e){ toast('导出失败'); }
+}
+
+/* ============ 事件 ============ */
+document.addEventListener('click', async (e)=>{
+  const menuBtn = e.target.closest('#menuBtn'); if(menuBtn){ openDrawer(); return; }
+  const scrim = e.target.closest('#scrim'); if(scrim){ closeDrawer(); return; }
+  const li = e.target.closest('.menu li'); if(li){ nav(li.dataset.page); return; }
+  const t = e.target.closest('[data-act]'); if(!t) return;
+  const act = t.dataset.act, id=t.dataset.id;
+  if(act==='ledger-prev'){ ledgerMonth=shiftMonth(ledgerMonth,-1); render(); return; }
+  if(act==='ledger-next'){ ledgerMonth=shiftMonth(ledgerMonth,1); render(); return; }
+
+  if(act==='quick-save'){
+    const amt=parseFloat($('#qAmount').value);
+    if(!(amt>0)){ toast('先填金额'); return; }
+    if(!quickForm.category||!quickForm.mood||!quickForm.body){ toast('三个标签都点一下'); return; }
+    STATE.records.push({id:uid(),ts:new Date().toISOString(),amount:amt,category:quickForm.category,mood:quickForm.mood,body:quickForm.body,note:$('#qNote').value.trim()});
+    await save(); quickForm={category:null,mood:null,body:null};
+    $('#qAmount').value=''; $('#qNote').value=''; toast('记好了 ⚡');
+    render(); return;
+  }
+  if(act==='rec-del'){ STATE.records=STATE.records.filter(r=>r.id!==id); await save(); render(); return; }
+
+  if(act==='debt-add'){
+    const name=$('#dName').value.trim(); const total=parseFloat($('#dTotal').value);
+    if(!name||!(total>0)){ toast('填名称和总额'); return; }
+    const d={id:uid(),name,type:$('#dType').value,total,paid:0,repayments:[]};
+    const due=parseInt($('#dDue').value); if(due>=1&&due<=31){ STATE.settings.repayDays[d.id]=due; }
+    STATE.debts.push(d); await save(); toast('已添加'); render(); return;
+  }
+  if(act==='debt-repay'){
+    const d=STATE.debts.find(x=>x.id===id); if(!d) return;
+    const v=prompt('还了多少？', '0'); if(v==null) return; const amt=parseFloat(v); if(!(amt>0)) return;
+    d.paid=(Number(d.paid)||0)+amt; d.repayments.push({ts:new Date().toISOString(),amount:amt});
+    await save(); toast('已记还款'); render(); return;
+  }
+  if(act==='debt-del'){ STATE.debts=STATE.debts.filter(x=>x.id!==id); await save(); render(); return; }
+  if(act==='reservoir-add'){ STATE.reservoir.current=(Number(STATE.reservoir.current)||0)+(Number(STATE.settings.paydayTransfer)||0); await save(); toast('应急卡+'+fmt(STATE.settings.paydayTransfer)); render(); return; }
+
+  if(act==='side-add'){
+    const desc=$('#sDesc').value.trim(); const cost=parseFloat($('#sCost').value)||0;
+    if(!desc){ toast('写一下要做什么'); return; }
+    STATE.sideHustle.actions.push({id:uid(),ts:new Date().toISOString(),desc,cost,time:$('#sTime').value.trim(),status:'todo',result:null});
+    await save(); toast('已加入'); render(); return;
+  }
+  if(act==='side-done'){
+    const a=STATE.sideHustle.actions.find(x=>x.id===id); if(!a) return;
+    const r=prompt('结果？输入 赚 或 排除（排除一个方向）','赚');
+    if(r==null) return; a.status='done'; a.result= r.trim()==='排除'?'exclude':'earn'; await save(); render(); return;
+  }
+  if(act==='aban-add'){ const txt=$('#aText').value.trim(); if(!txt){toast('写点什么');return;} STATE.sideHustle.abandon.push({id:uid(),ts:new Date().toISOString(),text:txt}); await save(); toast('已记'); render(); return; }
+  if(act==='aban-del'){ STATE.sideHustle.abandon=STATE.sideHustle.abandon.filter(x=>x.id!==id); await save(); render(); return; }
+
+  if(act==='side-tab'){ sideTab=t.dataset.tab||'wallet'; render(); return; }
+  if(act==='debt-tab'){ debtTab=t.dataset.tab||'debt'; render(); return; }
+  if(act==='checkup-tab'){ checkupTab=t.dataset.tab||'report'; render(); return; }
+  if(act==='cool-tab'){ coolTab=t.dataset.tab||'list'; render(); return; }
+  if(act==='set-tab'){ setTab=t.dataset.tab||'basic'; render(); return; }
+  if(act==='idea-gen'){ await genIdea(); return; }
+  if(act==='idea-del'){ STATE.sideHustle.ideas=STATE.sideHustle.ideas.filter(x=>x.id!==id); await save(); toast('已删'); render(); return; }
+  if(act==='idea-to-wallet'){
+    const idea=STATE.sideHustle.ideas.find(x=>x.id===id); if(!idea) return;
+    const st=(idea.plan&&idea.plan.steps||[])[Number(t.dataset.step)]; if(!st) return;
+    STATE.sideHustle.actions.push({id:uid(),ts:new Date().toISOString(),desc:st.title,cost:Number(st.cost)||0,time:st.time||'',status:'todo',result:null,ideaId:id});
+    await save(); sideTab='wallet'; toast('已加入钱包'); render(); return;
+  }
+  if(act==='idea-all-wallet'){
+    const idea=STATE.sideHustle.ideas.find(x=>x.id===id); if(!idea) return;
+    (idea.plan.steps||[]).forEach(st=>STATE.sideHustle.actions.push({id:uid(),ts:new Date().toISOString(),desc:st.title,cost:Number(st.cost)||0,time:st.time||'',status:'todo',result:null,ideaId:id}));
+    await save(); sideTab='wallet'; toast('已全部加入钱包'); render(); return;
+  }
+  if(act==='led-del'){ STATE.sideHustle.actions=STATE.sideHustle.actions.filter(x=>x.id!==id); await save(); render(); return; }
+  if(act==='settings-save'){
+    const num=(i)=>{ const v=parseFloat($('#'+i).value); return isNaN(v)?0:v; };
+    STATE.settings.payday=Math.max(1,Math.round(num('payday')));
+    STATE.settings.paydayTransfer=num('paydayTransfer');
+    STATE.settings.monthlyExpense=num('monthlyExpense');
+    STATE.settings.reservoirTargetMonths=Math.max(1,Math.round(num('reservoirTargetMonths')));
+    STATE.settings.income=num('income');
+    STATE.settings.trialWalletAmount=num('trialWalletAmount');
+    STATE.settings.aiMonthlyBudget=num('aiMonthlyBudget');
+    await save(); toast('设置已保存'); render(); return;
+  }
+
+  if(act==='cool-add'){
+    const name=$('#cName').value.trim(); const amt=parseFloat($('#cAmount').value); const imp=parseInt($('#cImpulse').value)||1;
+    if(!name||!(amt>0)){ toast('填名称和金额'); return; }
+    const decide=new Date(Date.now()+72*36e5).toISOString();
+    STATE.cooldown.push({id:uid(),ts:new Date().toISOString(),name,amount:amt,impulse:Math.min(5,Math.max(1,imp)),emotion:$('#cEmotion').value,decideAt:decide,status:'waiting',savedAmount:0});
+    await save(); toast('开始冷静 72h'); render(); return;
+  }
+  if(act==='cool-resolve'){
+    const c=STATE.cooldown.find(x=>x.id===id); if(!c) return;
+    c.status=t.dataset.status; if(t.dataset.status==='skipped') c.savedAmount=c.amount; await save(); render(); return;
+  }
+  if(act==='cool-del'){ STATE.cooldown=STATE.cooldown.filter(x=>x.id!==id); await save(); render(); return; }
+
+  if(act==='goal-add'){
+    const text=$('#gText').value.trim(); const target=parseFloat($('#gTarget').value);
+    if(!text||!(target>0)){ toast('填目标和目标值'); return; }
+    STATE.annualGoals.push({id:uid(),text,target,current:parseFloat($('#gCur').value)||0,unit:$('#gUnit').value.trim()});
+    await save(); toast('目标已加'); render(); return;
+  }
+  if(act==='goal-update'){
+    const g=STATE.annualGoals.find(x=>x.id===id); const v=parseFloat($('#gcur-'+id).value); if(g&&!isNaN(v)){ g.current=v; await save(); toast('已更新'); render(); }
+    return;
+  }
+  if(act==='goal-del'){ STATE.annualGoals=STATE.annualGoals.filter(x=>x.id!==id); await save(); render(); return; }
+
+  if(act==='rem-toggle'){ STATE.settings.reminders=STATE.settings.reminders||{}; STATE.settings.reminders[id]=!STATE.settings.reminders[id]; await save(); render(); return; }
+  if(act==='backup-now'){ exportData(); return; }
+  if(act==='import-open'){
+    const f=$('#importFile'); if(!f) return;
+    f.onchange=()=>{ const file=f.files[0]; if(!file) return; const rd=new FileReader();
+      rd.onload=()=>{ try{ const d=JSON.parse(rd.result); if(d&&d.settings){ STATE=d; save(); toast('导入成功 ✓'); } else toast('文件格式不对'); }catch(e){ toast('解析失败'); } render(); };
+      rd.readAsText(file); };
+    f.click(); return;
+  }
+});
+function shiftMonth(m,delta){ let [y,mm]=m.split('-').map(Number); mm+=delta; if(mm>12){mm=1;y++;} if(mm<1){mm=12;y--;} return y+'-'+String(mm).padStart(2,'0'); }
+
+/* ---------- 启动 ---------- */
+(async ()=>{ await load(); nav('quick'); })();
+
+</script>
+</body>
+</html>
